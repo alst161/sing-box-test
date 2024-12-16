@@ -7,10 +7,6 @@ import (
 	"crypto/tls"
 	"encoding/base64"
 	"encoding/hex"
-	"net"
-	"time"
-
-	"github.com/sagernet/reality"
 	"github.com/sagernet/sing-box/common/dialer"
 	"github.com/sagernet/sing-box/log"
 	"github.com/sagernet/sing-box/option"
@@ -19,6 +15,9 @@ import (
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"
 	"github.com/sagernet/sing/common/ntp"
+	"github.com/xtls/reality"
+	"net"
+	"time"
 )
 
 var _ ServerConfigCompat = (*RealityServerConfig)(nil)

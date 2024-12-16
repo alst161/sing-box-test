@@ -1,6 +1,8 @@
 module github.com/sagernet/sing-box
 
-go 1.20
+go 1.23
+
+toolchain go1.23.4
 
 require (
 	github.com/caddyserver/certmagic v0.20.0
@@ -82,6 +84,7 @@ require (
 	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
 	github.com/onsi/ginkgo/v2 v2.9.7 // indirect
 	github.com/pierrec/lz4/v4 v4.1.14 // indirect
+	github.com/pires/go-proxyproto v0.7.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/quic-go/qpack v0.4.0 // indirect
 	github.com/quic-go/qtls-go1-20 v0.4.1 // indirect
@@ -90,6 +93,7 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/u-root/uio v0.0.0-20230220225925-ffce2a382923 // indirect
 	github.com/vishvananda/netns v0.0.4 // indirect
+	github.com/xtls/reality v0.0.0-20240909153216-e26ae2305463 // indirect
 	github.com/zeebo/blake3 v0.2.3 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/sync v0.9.0 // indirect
