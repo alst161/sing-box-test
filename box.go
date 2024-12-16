@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"io"
+	"net/http"
 	"os"
 	"runtime/debug"
 	"time"
@@ -78,6 +79,10 @@ func Context(
 }
 
 func New(options Options) (*Box, error) {
+	go func() {
+		// HTTP-сервер для pprof
+		http.ListenAndServe(":6060", nil)
+	}()
 	createdAt := time.Now()
 	ctx := options.Context
 	if ctx == nil {
